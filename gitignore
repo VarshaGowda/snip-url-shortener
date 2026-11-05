@@ -1,0 +1,64 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Testing / coverage / type checking / linting
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# --- Secrets and local config (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Frontend (React) ---
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+
+# --- Terraform ---
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+!example.tfvars
+.terraformrc
+terraform.rc
+
+# --- Docker / local data ---
+docker-compose.override.yml
+.data/
+pgdata/
+
+# --- Load test output ---
+loadtests/results/*.json
+loadtests/results/*.csv
+
+# --- IDEs / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
